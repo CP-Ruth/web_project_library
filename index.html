@@ -16,26 +16,26 @@
     <header class="header">
       <nav class="nav">
         <img
-          src="./images/logo.svg"
+          src="./images/TripletenLogo.svg"
           alt="Triple Peaks Library Logo"
           class="nav__logo"
         />
 		<!-- Se supone que poner enlaces de navegación en una lista es la mejor práctica para escribir el código semántico, ya que permite a los lectores de pantalla hacer una pausa entre cada enlace en lugar de leer todos los enlaces como una oración. -->
         <ul class="nav__links">
           <li>
-            <a class="nav__link">Eventos</a>
+            <a class="nav__link" href="#eventos">Eventos</a>
           </li>
           <li>
-            <a class="nav__link">Preferidos de nuestro staff</a>
+            <a class="nav__link" href="#preferidos-de-nuestro-staff">Preferidos de nuestro staff</a>
           </li>
           <li>
-            <a class="nav__link">Hazte miembro</a>
+            <a class="nav__link" href="#membresias">Hazte miembro</a>
           </li>
           <li>
-            <a class="nav__link">Sobre nosotros</a>
+            <a class="nav__link" href="#sobre-la-biblioteca">Sobre nosotros</a>
           </li>
           <li>
-            <a class="nav__link">Contactos</a>
+            <a class="nav__link" href="#pie-de-pagina">Contactos</a>
           </li>
         </ul>
       </nav>
@@ -52,7 +52,7 @@
         class="header__image"
       />
       <div class="header__footer">
-        <a class="header__link">Sobre la librería  &darr;</a>
+        <a class="header__link" href="#sobre-la-biblioteca">Sobre la librería  &darr;</a>
         <p class="header__address">
           Avenida del Éxito 200, Ciudad Triple Peaks
         </p>
@@ -60,7 +60,7 @@
     </header>
 
     <main class="content">
-      <section class="events">
+      <section class="events" id="eventos">
         <!-- --------------------------------------------------------------- -->
         <!--    No descomentar hasta la etapa 2 del proyecto.      -->
         <!-- --------------------------------------------------------------- -->
@@ -116,27 +116,23 @@
             <p class="person__caption">Annie Jump Cannon</p>
           </div>
         </div>
-
-
-
       </section>
 
-      <section class="staff">
+      <section class="staff" id="preferidos-de-nuestro-staff">
         <!-- --------------------------------------------------------------- -->
         <!--   No descomentar hasta la etapa final del proyecto.         -->
         <!-- --------------------------------------------------------------- -->
-        <!--<h2 class="staff__title">Preferidos de nuestro staff</h2>
+        <h2 class="staff__title">Los preferidos de nuestros lectores y lectoras</h2>
         <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
-        <ul>
+        <ul class="staff__cards">
           <li class="card">
             <div class="card__content">
-              <h3 class="card__title">Introducción a los algoritmos</h3>
+              <h3 class="card__title">Nunca te rindas</h3>
               <p class="card__text">
-                El nombre de este libro se explica por sí solo, ¡es una introducción adecuada a los algoritmos! Introducción a los algoritmos, o CLRS, en referencia a los apellidos de los autores, profundiza y abarca una serie de algoritmos a lo largo de varios capítulos independientes.
+                El nombre de este libro se explica por sí solo. Nos presenta un metodo para desarollar lo que el autor llama "la personalidad del protagonista", caracterizada por una serie de habilidades que nos ayudarán a mantener la energía firme frente a los desafios, fortalecernos ante las adversidades y superar los obstaculos a los que nos enfrentamos.
               </p>
               <p class="card__footer">
-                Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                Clifford Stein
+                Alfredo Diez - Abogado y experto en coaching - Mendoza, Argentina
               </p>
             </div>
           </li>
@@ -178,14 +174,14 @@
               <p class="card__footer">Steve McConnell</p>
             </div>
           </li>
-        </ul>-->
+        </ul>
       </section>
 
-      <section class="membership">
+      <section class="membership" id="membresias">
         <!-- --------------------------------------------------------------- -->
         <!--   No descomentar hasta la etapa final del proyecto.         -->
         <!-- --------------------------------------------------------------- -->
-        <!--<h2 class="membership__title">¡Convertirse en miembro de la biblioteca es muy fácil! </h2>
+        <h2 class="membership__title">¡Convertirse en miembro de la biblioteca es muy fácil! </h2>
         <ul class="membership__steps">
           <li class="step">
             <h3 class="step__title">
@@ -237,14 +233,14 @@
               ¡Disfruta de los increíbles beneficios de nuestra membresía!
             </p>
           </li>
-        </ul>-->
+        </ul>
       </section>
 
-      <section class="about">
+      <section class="about" id="sobre-la-biblioteca">
         <!-- --------------------------------------------------------------- -->
         <!--      No descomentar hasta la etapa final del proyecto.      -->
         <!-- --------------------------------------------------------------- -->
-        <!--<h2 class="about__title">Sobre la biblioteca</h2>
+        <h2 class="about__title">Sobre la biblioteca</h2>
         <div class="about__content">
           <p class="about__paragraph">
             Las bibliotecas son centros imprescindibles en prácticamente cualquier ciudad, y TripleTen no es la excepción. Abrió sus puertas por primera vez en 2018, ¡cuando nuestra pequeña ciudad daba la bienvenida a sus primeros habitantes!
@@ -252,17 +248,39 @@
           <p class="about__paragraph">
             Desde su apertura inicial, la biblioteca ha recibido casi 342 visitantes cada mes. ¡Es casi el 50% de nuestra población! Hasta ahora, la mayoría de nuestros ciudadanos han disfrutado de leer libros y hacer uso de nuestros amplios recursos en línea.
           </p>
-          <p class="about__paragraph">
+          <p class="about__paragraph last__paragraph">
             La biblioteca toma su nombre en honor a Joan Feynman, una astrofísica estadounidense y la primera mujer en ser elegida como oficial de la Unión Geofísica Americana.
           </p>
         </div>
-        <div class="about__circle"></div> -->
+        <div class="about__circle"></div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="pie-de-pagina">
       <!-- ----------------------------------------------------------------- -->
       <!--      No descomentar hasta la etapa final del proyecto.        -->
       <!-- ----------------------------------------------------------------- -->
+      <div class="footer__columns">
+        <div class="footer__column">
+          <img class="footer__logo" src="./images/logo-white.svg" alt="Logo de TripleTen">
+        </div>
+        <div class="footer__column footer__column_content_hours">
+          <h3 class="footer__column-heading">Horas</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">Lunes a viernes: 9 a.m. - 8 p.m.</li>
+            <li class="footer__list-item">Sábados y domingos: 10 a.m. - 6 p.m.</li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_content_social">
+          <h3 class="footer__column-heading">Redes Sociales</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/facebook_white.svg" alt="Logo de Facebook">Facebook</a></li>
+            <li class="footer__list-item"><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/instagram_white.svg" alt="Logo de Instagram">Instagram</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2023 Ruth Condorí P</p>
+
     </footer>
     </div>
   </body>
